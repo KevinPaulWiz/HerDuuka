@@ -1,0 +1,2211 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from nago.laborasyon.com/demos/layouts/default/mail.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Feb 2020 09:19:00 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nago - Admin & Dashboard HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="../../vendors/bundle.css" type="text/css">
+
+        <!-- Quill editor -->
+    <link href="../../vendors/quill/quill.snow.css" rel="stylesheet" type="text/css">
+
+    <!-- Tagsinput -->
+    <link rel="stylesheet" href="../../vendors/tagsinput/bootstrap-tagsinput.css" type="text/css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="../../assets/css/app.min.css" type="text/css">
+</head>
+<body  class="stretch-layout small-navigation" >
+
+<!-- begin::preloader-->
+<div class="preloader">
+    <div class="preloader-icon"></div>
+</div>
+<!-- end::preloader -->
+
+<!-- BEGIN: Sidebar Group -->
+<div class="sidebar-group">
+
+    <!-- BEGIN: User Menu -->
+    <div class="sidebar" id="user-menu">
+        <div class="py-4 text-center" data-backround-image="../../assets/media/image/image1.jpg">
+            <figure class="avatar avatar-lg mb-3 border-0">
+                <img src="../../assets/media/image/user/women_avatar1.jpg" class="rounded-circle" alt="image">
+            </figure>
+            <h5 class="d-flex align-items-center justify-content-center">Roxana Roussell</h5>
+            <div>
+                Balance: <strong>$500</strong>
+            </div>
+        </div>
+        <div class="card mb-0 card-body shadow-none">
+            <div class="mb-4">
+                <div class="list-group list-group-flush">
+                    <a href="profile.html" class="list-group-item p-l-r-0">Profile</a>
+                    <a href="#" class="list-group-item p-l-r-0 d-flex">Followers</a>
+                    <a href="mail.html" class="list-group-item p-l-r-0 d-flex">
+                        Inbox <span class="badge badge-danger ml-auto">2</span>
+                    </a>
+                    <a href="#" class="list-group-item p-l-r-0">Billing</a>
+                    <a href="#" class="list-group-item p-l-r-0" data-sidebar-target="#settings">Settings</a>
+                    <a href="login.html" class="list-group-item p-l-r-0 text-danger" data-sidebar-target="#settings">Sign Out!</a>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h6 class="d-flex justify-content-between">
+                    Completed Tasks
+                    <span class="float-right">%68</span>
+                </h6>
+                <div class="progress" style="height:5px;">
+                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 68%;"
+                         aria-valuenow="68"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h6 class="d-flex justify-content-between">
+                    Storage
+                    <span>%25</span>
+                </h6>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                         aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h6>About</h6>
+                <p class="text-muted mb-0">I love reading, traveling and discovering new things. You need to be happy in
+                    life.</p>
+            </div>
+            <div class="mb-4">
+                <h6>City</h6>
+                <p class="text-muted mb-0">Germany / Berlin</p>
+            </div>
+            <div class="mb-4">
+                <h6>Social Links</h6>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-floating btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-floating btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-floating btn-dribbble">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-floating btn-whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-floating btn-linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END: User Menu -->
+
+    <!-- BEGIN: Settings -->
+    <div class="sidebar" id="settings">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Settings</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item pl-0 pr-0">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                            <label class="custom-control-label" for="customSwitch1">Allow notifications.</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                            <label class="custom-control-label" for="customSwitch2">Hide user requests</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                            <label class="custom-control-label" for="customSwitch3">Speed up demands</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+                            <label class="custom-control-label" for="customSwitch4">Hide menus</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                            <label class="custom-control-label" for="customSwitch5">Remember next visits</label>
+                        </div>
+                    </li>
+                    <li class="list-group-item pl-0 pr-0">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch6">
+                            <label class="custom-control-label" for="customSwitch6">Enable report
+                                generation.</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END: Settings -->
+
+</div>
+<!-- END: Sidebar Group -->
+
+<!-- begin::main -->
+<div class="layout-wrapper">
+
+    <!-- begin::header -->
+    <div class="header d-print-none">
+
+        <div class="header-left">
+            <div class="navigation-toggler">
+                <a href="#" data-action="navigation-toggler">
+                    <i data-feather="menu"></i>
+                </a>
+            </div>
+            <div class="header-logo">
+                <a href=index.html>
+                    <img class="logo" src="../../assets/media/image/logo.png" alt="logo">
+                    <img class="logo-light" src="../../assets/media/image/logo-light.png" alt="light logo">
+                </a>
+            </div>
+        </div>
+
+        <div class="header-body">
+            <div class="header-body-left">
+                <div class="page-title">
+                    <h4>Mail</h4>
+                </div>
+            </div>
+            <div class="header-body-right">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown">
+                            <img width="18" src="../../assets/media/image/flags/262-united-kingdom.png"
+                                 alt="flag"
+                                 class="mr-2 rounded" title="United Kingdom"> EN
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">
+                                <img width="18" src="../../assets/media/image/flags/003-tanzania.png"
+                                     class="mr-2 rounded"
+                                     alt="flag">
+                                Tanzania
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img width="18" src="../../assets/media/image/flags/261-china.png"
+                                     class="mr-2 rounded"
+                                     alt="flag"> China
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img width="18" src="../../assets/media/image/flags/013-tunisia.png"
+                                     class="mr-2 rounded"
+                                     alt="flag">
+                                Tunisia
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <img width="18" src="../../assets/media/image/flags/044-spain.png"
+                                     class="mr-2 rounded"
+                                     alt="flag"> Spain
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- begin::header fullscreen -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" title="Fullscreen" data-toggle="fullscreen">
+                            <i class="maximize" data-feather="maximize"></i>
+                            <i class="minimize" data-feather="minimize"></i>
+                        </a>
+                    </li>
+                    <!-- end::header fullscreen -->
+
+                    <!-- begin::header search -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" title="Search" data-toggle="dropdown">
+                            <i data-feather="search"></i>
+                        </a>
+                        <div class="dropdown-menu p-2 dropdown-menu-right">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-prepend">
+                                        <button class="btn" type="button">
+                                            <i data-feather="search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- end::header search -->
+
+                    <!-- begin::apps -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" title="Apps" data-toggle="dropdown">
+                            <i data-feather="box"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                            <div class="bg-dark p-4 text-center d-flex justify-content-between">
+                                <h5 class="mb-0">Apps</h5>
+                            </div>
+                            <div class="p-3">
+                                <div class="row row-xs">
+                                    <div class="col-6">
+                                        <a href="chat.html">
+                                            <div class="border-radius-1 text-center mb-3">
+                                                <figure class="avatar avatar-lg border-0">
+                                                <span class="avatar-title bg-primary text-white rounded-circle">
+                                                    <i class="width-30 height-30" data-feather="message-circle"></i>
+                                                </span>
+                                                </figure>
+                                                <div class="mt-2">Chat</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="mail.html">
+                                            <div class="border-radius-1 text-center mb-3">
+                                                <figure class="avatar avatar-lg border-0">
+                                                <span class="avatar-title bg-secondary text-white rounded-circle">
+                                                    <i class="width-30 height-30" data-feather="mail"></i>
+                                                </span>
+                                                </figure>
+                                                <div class="mt-2">Mail</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="todo-list.html">
+                                            <div class="border-radius-1 text-center">
+                                                <figure class="avatar avatar-lg border-0">
+                                                <span class="avatar-title bg-info text-white rounded-circle">
+                                                    <i class="width-30 height-30" data-feather="check-circle"></i>
+                                                </span>
+                                                </figure>
+                                                <div class="mt-2">Todo List</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="file-manager.html">
+                                            <div class="border-radius-1 text-center">
+                                                <figure class="avatar avatar-lg border-0">
+                                                <span class="avatar-title bg-warning text-white rounded-circle">
+                                                    <i class="width-30 height-30" data-feather="file"></i>
+                                                </span>
+                                                </figure>
+                                                <div class="mt-2">File Manager</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end::apps -->
+
+                    <!-- begin::header messages dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link nav-link-notify" title="Chats" data-toggle="dropdown">
+                            <i data-feather="message-circle"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                            <div class="bg-dark p-4 text-center d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Chats</h5>
+                                <small class="opacity-7">2 unread chats</small>
+                            </div>
+                            <div>
+                                <ul class="list-group list-group-flush">
+                                    <li>
+                                        <a href="#" class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                    <img src="../../assets/media/image/user/man_avatar1.jpg"
+                                                         class="rounded-circle" alt="user">
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                    Herbie Pallatina
+                                                    <i title="Mark as read" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                                </p>
+                                                <div class="small text-muted">
+                                                    <span class="mr-2">02:30 PM</span>
+                                                    <span>Have you madimage</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                    <img src="../../assets/media/image/user/women_avatar5.jpg"
+                                                         class="rounded-circle" alt="user">
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                    Andrei Miners
+                                                    <i title="Mark as read" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                                </p>
+                                                <div class="small text-muted">
+                                                    <span class="mr-2">08:36 PM</span>
+                                                    <span>I have a meetinimage</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="text-divider small pb-2 pl-3 pt-3">
+                                        <span>Old chats</span>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                    <img src="../../assets/media/image/user/man_avatar3.jpg"
+                                                         class="rounded-circle" alt="user">
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                    Kevin added
+                                                    <i title="Mark as unread" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                                </p>
+                                                <div class="small text-muted">
+                                                    <span class="mr-2">11:09 PM</span>
+                                                    <span>Have you madimage</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                    <img src="../../assets/media/image/user/man_avatar2.jpg"
+                                                         class="rounded-circle" alt="user">
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                    Eugenio Carnelley
+                                                    <i title="Mark as unread" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                                </p>
+                                                <div class="small text-muted">
+                                                    <span class="mr-2">Yesterday</span>
+                                                    <span>I have a meetinimage</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                    <img src="../../assets/media/image/user/women_avatar1.jpg"
+                                                         class="rounded-circle" alt="user">
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                    Neely Ferdinand
+                                                    <i title="Mark as unread" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                                </p>
+                                                <div class="small text-muted">
+                                                    <span class="mr-2">Yesterday</span>
+                                                    <span>I have a meetinimage</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-2 text-right border-top">
+                                <ul class="list-inline small">
+                                    <li class="list-inline-item mb-0">
+                                        <a href="#">Mark All Read</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end::header messages dropdown -->
+
+                    <!-- begin::header notification dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link nav-link-notify" title="Notifications" data-toggle="dropdown">
+                            <i data-feather="bell"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                            <div class="bg-dark p-4 text-center d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Notifications</h5>
+                                <small class="opacity-7">1 unread notifications</small>
+                            </div>
+                            <div>
+                                <ul class="list-group list-group-flush">
+                                    <li>
+                                        <a href="#" class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                <span
+                                                    class="avatar-title bg-success-bright text-success rounded-circle">
+                                                    <i class="ti-user"></i>
+                                                </span>
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                    New customer registered
+                                                    <i title="Mark as read" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                                </p>
+                                                <span class="text-muted small">20 min ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="text-divider small pb-2 pl-3 pt-3">
+                                        <span>Old notifications</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                <span
+                                                    class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                                    <i class="ti-package"></i>
+                                                </span>
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                    New Order Recieved
+                                                    <i title="Mark as unread" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                                </p>
+                                                <span class="text-muted small">45 sec ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                <span class="avatar-title bg-danger-bright text-danger rounded-circle">
+                                                    <i class="ti-server"></i>
+                                                </span>
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                    Server Limit Reached!
+                                                    <i title="Mark as unread" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                                </p>
+                                                <span class="text-muted small">55 sec ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="list-group-item d-flex align-items-center hide-show-toggler">
+                                            <div>
+                                                <figure class="avatar mr-2">
+                                                <span class="avatar-title bg-info-bright text-info rounded-circle">
+                                                    <i class="ti-layers"></i>
+                                                </span>
+                                                </figure>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <p class="mb-0 line-height-20 d-flex align-items-center justify-content-between">
+                                                    Apps are ready for update
+                                                    <i title="Mark as unread" data-toggle="tooltip"
+                                                       class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                                </p>
+                                                <span class="text-muted small">Yesterday</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-2 text-right border-top">
+                                <ul class="list-inline small">
+                                    <li class="list-inline-item mb-0">
+                                        <a href="#">Mark All Read</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end::header notification dropdown -->
+
+                    <!-- BEGIN: Cart -->
+                    <li class="nav-item">
+                        <a href="#" title="Cart" class="nav-link" data-toggle="dropdown">
+                            <i data-feather="shopping-bag"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                            <div class="bg-dark p-4 text-center d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Cart</h5>
+                                <small class="opacity-7">3 products</small>
+                            </div>
+                            <div>
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="p-3 list-group-item d-flex">
+                                        <div>
+                                            <figure class="avatar mr-3">
+                                                <img src="../../assets/media/image/products/product6.png"
+                                                     alt="Canon 4000D 18-55 MM">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Canon 4000D 18-55 MM
+                                                <i title="Close" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item ti-close"></i>
+                                            </p>
+                                            <span class="text-muted small">1 X $1,200</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 list-group-item d-flex">
+                                        <div>
+                                            <figure class="avatar mr-3">
+                                                <img src="../../assets/media/image/products/product3.png"
+                                                     alt="pineapple">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Snopy SN-BT96 Pretty
+                                                <i title="Close" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item ti-close"></i>
+                                            </p>
+                                            <span class="text-muted small">1 X $250</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="p-3 list-group-item d-flex">
+                                        <div>
+                                            <figure class="avatar mr-3">
+                                                <img src="../../assets/media/image/products/product7.png"
+                                                     class="rounded" alt="pineapple">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Lenovo Tab E10 TB-X104F 32GB
+                                                <i title="Close" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item ti-close"></i>
+                                            </p>
+                                            <span class="text-muted small">2 X $100</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-3 border-top text-right">
+                                <p class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Sub Total</span>
+                                    <span>$1,650</span>
+                                </p>
+                                <p class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Taxes</span>
+                                    <span>$15</span>
+                                </p>
+                                <p class="d-flex justify-content-between align-items-center mb-2 font-weight-bold">
+                                    <span>Total</span>
+                                    <span>$1,675</span>
+                                </p>
+                                <button class="btn btn-primary btn-block mt-2">
+                                    Order and Payment <i class="ti-arrow-right ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- END: Cart -->
+
+                    <!-- begin::settings -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" title="Settings" data-sidebar-target="#settings">
+                            <i data-feather="settings"></i>
+                        </a>
+                    </li>
+                    <!-- end::settings -->
+
+                    <!-- begin::user menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" title="User menu" data-sidebar-target="#user-menu">
+                            <span class="mr-2 d-sm-inline d-none">Roxana Roussell</span>
+                            <figure class="avatar avatar-sm">
+                                <img src="../../assets/media/image/user/women_avatar1.jpg" class="rounded-circle"
+                                     alt="avatar">
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end::user menu -->
+
+                </ul>
+
+                <!-- begin::mobile header toggler -->
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item header-toggler">
+                        <a href="#" class="nav-link">
+                            <i data-feather="arrow-down"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end::mobile header toggler -->
+            </div>
+        </div>
+
+    </div>
+    <!-- end::header -->
+
+    <div class="content-wrapper">
+
+        <!-- begin::navigation -->
+        <div class="navigation">
+            <div class="navigation-menu-tab">
+                <ul>
+                    <li>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="Ecommerce"
+                           data-nav-target="#ecommerce">
+                            <i data-feather="shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="Analytics"
+                           data-nav-target="#analytics">
+                            <i data-feather="activity"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="Projects"
+                           data-nav-target="#projects">
+                            <i data-feather="briefcase"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip"
+                           data-placement="right" title="Apps" data-nav-target="#apps">
+                            <i data-feather="globe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="User"
+                           data-nav-target="#user">
+                            <i data-feather="users"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip"
+                           data-placement="right" title="Components"
+                           data-nav-target="#components">
+                            <i data-feather="layers"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip"
+                           data-placement="right" title="Forms"
+                           data-nav-target="#forms">
+                            <i data-feather="edit-3"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip"
+                           data-placement="right" title="Plugins"
+                           data-nav-target="#plugins">
+                            <i data-feather="gift"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="tooltip"
+                           data-placement="right" title="Pages" data-nav-target="#pages">
+                            <i data-feather="copy"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navigation-menu-body">
+                <div class="navigation-menu-group">
+                    <div id="ecommerce">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="shopping-cart"></i> E-commerce
+                            </li>
+                            <li>
+                                <a  href="ecommerce-dashboard.html">Dashboard</a></li>
+                            <li>
+                                <a  href="orders.html">Orders</a></li>
+                            <li>
+                                <a  href="product-list.html">Product List</a></li>
+                            <li>
+                                <a  href="product-grid.html">Product Grid</a></li>
+                            <li>
+                                <a  href="product-detail.html">Product Detail</a></li>
+                            <li class="navigation-divider">Summary</li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-3">
+                                <span class="avatar-title bg-warning rounded">
+                                    <i class="ti-bar-chart-alt"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6>Total Orders</h6>
+                                        <h4 class="mb-0 font-weight-bold">$50.958</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-3">
+                                <span class="avatar-title bg-success rounded">
+                                    <i class="ti-trash"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6>New Products</h6>
+                                        <h4 class="mb-0">100</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-3">
+                                <span class="avatar-title bg-danger rounded">
+                                    <i class="ti-reload"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6>Refund</h6>
+                                        <h4 class="mb-0">5.301</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="analytics">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="activity"></i> Analytics
+                            </li>
+                            <li>
+                                <a  href="analytics-dashboard.html">Dashboard</a></li>
+                            <li>
+                                <a  href="customers.html">Customers</a></li>
+                            <li class="navigation-divider">Summary</li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-2">
+                                <span class="avatar-title bg-warning rounded-circle">
+                                    <i class="ti-bar-chart-alt"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Total Sales</h6>
+                                        <p class="text-muted mb-0 small">This Mounth</p>
+                                        <h4 class="mb-0">$50.958</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-2">
+                                <span class="avatar-title bg-success rounded-circle">
+                                    <i class="ti-world"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Projects</h6>
+                                        <p class="text-muted mb-0 small">Today</p>
+                                        <h4 class="mb-0">35</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-2">
+                                <span class="avatar-title bg-info rounded-circle">
+                                    <i class="ti-user"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Total Visitor</h6>
+                                        <p class="text-muted mb-0 small">Today</p>
+                                        <h4 class="mb-0">5.301</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="projects">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="briefcase"></i> Projects
+                            </li>
+                            <li>
+                                <a  href="projects-dashboard.html">Dashboard</a></li>
+                            <li>
+                                <a  href="project-list.html">Project List</a></li>
+                            <li>
+                                <a  href="project-grid.html">Project Grid</a></li>
+                            <li>
+                                <a  href="project-detail.html">Project Detail</a></li>
+                            <li>
+                                <a  href="clients.html">Clients</a></li>
+                            <li class="navigation-divider">Summary</li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-2">
+                                <span class="avatar-title bg-warning rounded-circle">
+                                    <i class="ti-bar-chart-alt"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Total Sales</h6>
+                                        <p class="text-muted mb-0 small">This Mounth</p>
+                                        <h4 class="mb-0">$50.958</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-2">
+                                <span class="avatar-title bg-success rounded-circle">
+                                    <i class="ti-world"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Projects</h6>
+                                        <p class="text-muted mb-0 small">Today</p>
+                                        <h4 class="mb-0">35</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-start">
+                                    <div>
+                                        <figure class="avatar mr-2">
+                                <span class="avatar-title bg-info rounded-circle">
+                                    <i class="ti-user"></i>
+                                </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Total Visitor</h6>
+                                        <p class="text-muted mb-0 small">Today</p>
+                                        <h4 class="mb-0">5.301</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="apps">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="globe"></i> Apps
+                            </li>
+                            <li>
+                                <a  href="chat.html">
+                                    <span>Chat</span>
+                                    <span class="badge badge-danger">5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a  class="active"
+                                    href="mail.html">
+                                    <span>Mail</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="todo-list.html">
+                                    <span>Todo List</span>
+                                    <span class="badge badge-warning">2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="file-manager.html">
+                                    <span>File Manager</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="calendar.html">
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="gallery.html">
+                                    <span>Gallery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a  href="invoice.html">Invoice</a></li>
+                            <li class="navigation-divider">Recent Contacts</li>
+                            <li>
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item d-flex align-items-center">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-10">
+                                                <img src="../../assets/media/image/user/man_avatar1.jpg"
+                                                     class="rounded-circle" alt="image">
+                                            </div>
+                                        </div>
+                                        <span>Valentine Maton</span>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex align-items-center">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-10">
+                                                <img src="../../assets/media/image/user/women_avatar2.jpg"
+                                                     class="rounded-circle" alt="image">
+                                            </div>
+                                        </div>
+                                        <span>Holmes Cherryman</span>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex align-items-center">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-10">
+                                                <img src="../../assets/media/image/user/women_avatar4.jpg"
+                                                     class="rounded-circle" alt="image">
+                                            </div>
+                                        </div>
+                                        <span>Kenneth Hune</span>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex align-items-center">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-10">
+                                                <img src="../../assets/media/image/user/women_avatar3.jpg"
+                                                     class="rounded-circle" alt="image">
+                                            </div>
+                                        </div>
+                                        <span>Holmes Cherryman</span>
+                                    </a>
+                                    <a href="#" class="list-group-item d-flex align-items-center">
+                                        <div>
+                                            <div class="avatar avatar-sm m-r-10">
+                                                <img src="../../assets/media/image/user/women_avatar5.jpg"
+                                                     class="rounded-circle" alt="image">
+                                            </div>
+                                        </div>
+                                        <span>Kenneth Hune</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="user">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="users"></i> User
+                            </li>
+                            <li>
+                                <a  href="profile.html">Profile</a></li>
+                            <li>
+                                <a  href="user-list.html">User List</a></li>
+                            <li>
+                                <a  href="user-edit.html">User Edit</a></li>
+                            <li><a href="login.html" target="_blank">Login</a></li>
+                            <li><a href="register.html" target="_blank">Register</a></li>
+                            <li><a href="recovery-password.html" target="_blank">Recovery Password</a>
+                            </li>
+                            <li><a href="lock-screen.html" target="_blank">Lock Screen</a></li>
+                            <li class="navigation-divider">Followers</li>
+                            <li>
+                                <div class="avatar-group ml-4">
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Krisha McAlees" data-toggle="tooltip">
+                                            <img src="../../assets/media/image/user/women_avatar4.jpg" class="rounded-circle"
+                                                 alt="avatar">
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Rozella Baskerfield" data-toggle="tooltip">
+                                            <span class="avatar-title bg-info rounded-circle">R</span>
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Hilton Dew" data-toggle="tooltip">
+                                            <img src="../../assets/media/image/user/man_avatar3.jpg" class="rounded-circle"
+                                                 alt="avatar">
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Mellie Smittoune" data-toggle="tooltip">
+                                            <img src="../../assets/media/image/user/man_avatar1.jpg" class="rounded-circle"
+                                                 alt="avatar">
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Avery Hampshire" data-toggle="tooltip">
+                                            <span class="avatar-title bg-warning rounded-circle">A</span>
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Krisha McAlees" data-toggle="tooltip">
+                                            <img src="../../assets/media/image/user/women_avatar2.jpg" class="rounded-circle"
+                                                 alt="avatar">
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Rozella Baskerfield" data-toggle="tooltip">
+                                            <span class="avatar-title bg-success rounded-circle">R</span>
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Other" data-toggle="tooltip">
+                                            <span class="avatar-title bg-dark rounded-circle">+5</span>
+                                        </a>
+                                    </figure>
+                                </div>
+                            </li>
+                            <li class="navigation-divider">Following</li>
+                            <li>
+                                <div class="avatar-group ml-4">
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Krisha McAlees" data-toggle="tooltip">
+                                            <img src="../../assets/media/image/user/women_avatar5.jpg" class="rounded-circle"
+                                                 alt="avatar">
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Darby Croci" data-toggle="tooltip">
+                                            <span class="avatar-title bg-danger rounded-circle">D</span>
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Hilton Dew" data-toggle="tooltip">
+                                            <img src="../../assets/media/image/user/man_avatar5.jpg" class="rounded-circle"
+                                                 alt="avatar">
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Mellie Smittoune" data-toggle="tooltip">
+                                            <img src="../../assets/media/image/user/man_avatar2.jpg" class="rounded-circle"
+                                                 alt="avatar">
+                                        </a>
+                                    </figure>
+                                    <figure class="avatar avatar-sm">
+                                        <a href="#" title="Mahalia Lemme" data-toggle="tooltip">
+                                            <span class="avatar-title bg-secondary rounded-circle">M</span>
+                                        </a>
+                                    </figure>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="components">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="layers"></i> Components
+                            </li>
+                            <li>
+                                <a href="#">Basic Components</a>
+                                <ul>
+                                    <li>
+                                        <a  href="alert.html">Alerts</a></li>
+                                    <li>
+                                        <a  href="accordion.html">Accordion</a></li>
+                                    <li>
+                                        <a  href="buttons.html">Buttons</a></li>
+                                    <li>
+                                        <a  href="dropdown.html">Dropdown</a></li>
+                                    <li>
+                                        <a  href="list-group.html">List Group</a></li>
+                                    <li>
+                                        <a  href="pagination.html">Pagination</a></li>
+                                    <li>
+                                        <a  href="typography.html">Typography</a></li>
+                                    <li>
+                                        <a  href="media-object.html">Media Object</a>
+                                    </li>
+                                    <li>
+                                        <a  href="progress.html">Progress</a></li>
+                                    <li>
+                                        <a  href="modal.html">Modal</a></li>
+                                    <li>
+                                        <a  href="spinners.html">Spinners</a></li>
+                                    <li>
+                                        <a  href="navs.html">Navs</a></li>
+                                    <li>
+                                        <a  href="tab.html">Tab</a></li>
+                                    <li>
+                                        <a  href="tooltip.html">Tooltip</a></li>
+                                    <li>
+                                        <a  href="popovers.html">Popovers</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cards</a>
+                                <ul>
+                                    <li>
+                                        <a  href="basic-cards.html">Basic Cards </a></li>
+                                    <li>
+                                        <a  href="image-cards.html">Image Cards </a></li>
+                                    <li>
+                                        <a  href="scroll-cards.html">Scroll Cards </a></li>
+                                    <li>
+                                        <a  href="other-cards.html">Others Cards</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Tables</a>
+                                <ul>
+                                    <li>
+                                        <a  href="basic-tables.html">Basic Tables</a></li>
+                                    <li>
+                                        <a  href="dataTable.html">Datatable</a></li>
+                                    <li>
+                                        <a  href="responsive-tables.html">Responsive Tables</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Charts</a>
+                                <ul>
+                                    <li>
+                                        <a  href="apexchart.html">Apex Chart</a></li>
+                                    <li>
+                                        <a  href="chartjs.html">Chartjs</a></li>
+                                    <li>
+                                        <a  href="justgage.html">Justgage</a></li>
+                                    <li>
+                                        <a  href="morsis.html">Morsis</a></li>
+                                    <li>
+                                        <a  href="peity.html">Peity</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Maps</a>
+                                <ul>
+                                    <li>
+                                        <a  href="google-map.html">Google Map</a></li>
+                                    <li>
+                                        <a  href="vector-map.html">Vector Map</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a  href="avatar.html">Avatar</a></li>
+                            <li>
+                                <a  href="icons.html">Icons</a></li>
+                            <li>
+                                <a  href="colors.html">Colors</a></li>
+                        </ul>
+                    </div>
+                    <div id="forms">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="edit-3"></i> Forms
+                            </li>
+                            <li>
+                                <a  href="basic-forms.html">Basic Forms</a></li>
+                            <li>
+                                <a  href="custom-forms.html">Custom Forms</a></li>
+                            <li>
+                                <a  href="advanced-forms.html">Advanced Forms</a></li>
+                            <li>
+                                <a  href="form-validation.html">Form Validation</a></li>
+                            <li>
+                                <a  href="form-wizard.html">Form Wizard</a></li>
+                            <li>
+                                <a  href="file-upload.html">File Upload</a></li>
+                            <li>
+                                <a  href="datepicker.html">Datepicker</a></li>
+                            <li>
+                                <a  href="timepicker.html">Timepicker</a></li>
+                            <li>
+                                <a  href="colorpicker.html">Colorpicker</a></li>
+                        </ul>
+                    </div>
+                    <div id="plugins">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="gift"></i> Plugins
+                            </li>
+                            <li>
+                                <a  href="sweet-alert.html">Sweet Alert</a></li>
+                            <li>
+                                <a  href="lightbox.html">Lightbox</a></li>
+                            <li>
+                                <a  href="toast.html">Toast</a></li>
+                            <li>
+                                <a  href="tour.html">Tour</a></li>
+                            <li>
+                                <a  href="slick-slide.html">Slick Slide</a></li>
+                            <li>
+                                <a  href="nestable.html">Nestable</a></li>
+                        </ul>
+                    </div>
+                    <div id="pages">
+                        <ul>
+                            <li class="navigation-divider d-flex align-items-center">
+                                <i class="mr-2" data-feather="copy"></i> Pages
+                            </li>
+                            <li>
+                                <a  href="timeline.html">Timeline</a></li>
+                            <li>
+                                <a  href="pricing-table.html">Pricing Table</a></li>
+
+                            <li>
+                                <a  href="pricing-table-2.html">Pricing Table 2</a></li>
+                            <li>
+                                <a  href="search-result.html">Search Result</a></li>
+                            <li>
+                                <a  href="mailing.html">Mailing</a></li>
+                            <li>
+                                <a href="#">Error Pages</a>
+                                <ul>
+                                    <li><a href="404.html" target="_blank">404</a></li>
+                                    <li><a href="503.html" target="_blank">503</a></li>
+                                    <li><a href="mean-at-work.html" target="_blank">Mean at
+                                            Work</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a  href="blank-page.html">Blank Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu Level</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Menu Level</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Menu Level </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end::navigation -->
+
+        <div class="content-body">
+
+            <div class="content">
+
+                
+    <div class="row app-block">
+        <div class="col-md-3 app-sidebar">
+            <div class="card">
+                <div class="card-body">
+                    <button class="btn btn-secondary btn-block" data-toggle="modal" data-target="#compose">
+                        Compose Email
+                    </button>
+                </div>
+                <div class="app-sidebar-menu">
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item active d-flex align-items-center">
+                            <i data-feather="mail" class="mr-2 width-15 height-15"></i>
+                            Inbox
+                            <span class="small ml-auto">14</span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i data-feather="send" class="mr-2 width-15 height-15"></i>
+                            Send
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i data-feather="edit-3" class="mr-2 width-15 height-15"></i>
+                            Draft
+                        </a>
+                        <a href="#" class="list-group-item d-flex align-items-center">
+                            <i data-feather="star" class="mr-2 width-15 height-15"></i>
+                            Starred
+                            <span class="small ml-auto">10</span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i data-feather="info" class="mr-2 width-15 height-15"></i>
+                            Spam
+                        </a>
+                        <a href="#" class="list-group-item d-flex align-items-center">
+                            <i data-feather="trash" class="mr-2 width-15 height-15"></i>
+                            Trash
+                            <span class="small ml-auto">2</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="mb-0">Labels</h6>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item d-flex align-items-center">
+                            <span class="text-warning fa fa-circle mr-2"></span>
+                            Theme Support
+                            <span class="small ml-auto">5</span>
+                        </a>
+                        <a href="#" class="list-group-item d-flex align-items-center">
+                            <span class="text-success fa fa-circle mr-2"></span>
+                            Freelance
+                        </a>
+                        <a href="#" class="list-group-item d-flex align-items-center">
+                            <span class="text-danger fa fa-circle mr-2"></span>
+                            Social
+                        </a>
+                        <a href="#" class="list-group-item d-flex align-items-center">
+                            <span class="text-info fa fa-circle mr-2"></span>
+                            Friends
+                        </a>
+                        <a href="#" class="list-group-item d-flex align-items-center">
+                            <span class="text-secondary fa fa-circle mr-2"></span>
+                            Coding
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 app-content">
+            <div class="app-content-overlay"></div>
+            <div class="app-action">
+                <div class="action-left">
+                    <div class="custom-control custom-checkbox mr-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheckAll">
+                        <label class="custom-control-label" for="customCheckAll"></label>
+                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item mb-0">
+                            <a href="#" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+                                With selected
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Mark as read</a>
+                                <a class="dropdown-item" href="#">Mark as unread</a>
+                                <a class="dropdown-item" href="#">Spam</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item mb-0">
+                            <a href="#" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+                                Order by
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Date</a>
+                                <a class="dropdown-item" href="#">From</a>
+                                <a class="dropdown-item" href="#">Subject</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Size</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="action-right">
+                    <form class="d-flex mr-3">
+                        <a href="#" class="app-sidebar-menu-button btn btn-outline-light">
+                            <i data-feather="menu" class="width-15 height-15"></i>
+                        </a>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email search"
+                                   aria-describedby="button-addon1">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light" type="button" id="button-addon1">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="app-pager d-flex align-items-center">
+                        <div class="mr-3">1-50 of 253</div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <i data-feather="chevron-left" class="width-15 height-15"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <i data-feather="chevron-right" class="width-15 height-15"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-body app-content-body">
+                <div class="app-lists">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star-o font-size-16"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <img src="../../assets/media/image/user/man_avatar5.jpg" class="rounded-circle" alt="image">
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">Lucas Kriebel (via Twitter)</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, labore?</div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-danger"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item active">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" checked id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star font-size-16 text-warning"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <span class="avatar-title bg-info-bright text-info rounded-circle">Z</span>
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">Ecommerce website Paypal integration 😃</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <a href="#" data-toggle="tooltip" title="Attachment">
+                                                    <i class="fa fa-paperclip"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-success"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star-o font-size-16"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <span class="avatar-title bg-danger-bright text-danger rounded-circle">S</span>
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">Randy, me (5)</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque dicta eligendi, in quasi recusandae.</div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <a href="#" data-toggle="tooltip" title="Attachment">
+                                                    <i class="fa fa-paperclip"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-info"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                    <label class="custom-control-label" for="customCheck4"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star-o font-size-16"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <img src="../../assets/media/image/user/women_avatar3.jpg" class="rounded-circle" alt="image">
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">Andrew Zimmer ❤❤</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Lorem ipsum dolor sit amet.</div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-secondary"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                    <label class="custom-control-label" for="customCheck5"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star font-size-16 text-warning"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <span class="avatar-title bg-info-bright text-info rounded-circle">Z</span>
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">Charukaw, me (7)</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores esse et hic nesciunt quas ratione rem reprehenderit similique temporibus totam!</div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-primary"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                    <label class="custom-control-label" for="customCheck6"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star-o font-size-16"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <span class="avatar-title bg-danger-bright text-danger rounded-circle">S</span>
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">Stack Exchange</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Lorem ipsum dolor sit amet.</div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-warning"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                    <label class="custom-control-label" for="customCheck7"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star-o font-size-16"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <span class="avatar-title bg-success-bright text-success rounded-circle">K</span>
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">Facebook register completed 👍</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Hey John, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, esse.
+                                    </div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-success"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                    <label class="custom-control-label" for="customCheck8"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star font-size-16 text-warning"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <span class="avatar-title bg-info-bright text-info rounded-circle">Z</span>
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">Peter, me (3)</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Assumenda cupiditate dolor earum est illo labore nesciunt officia provident quis tempora?</div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <a href="#" data-toggle="tooltip" title="Attachment">
+                                                    <i class="fa fa-paperclip"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-info"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>
+                                <div class="custom-control custom-checkbox mr-2">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                    <label class="custom-control-label" for="customCheck9"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="add-star mr-3" title="Add stars">
+                                    <i class="fa fa-star-o font-size-16"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <figure class="avatar avatar-sm mr-3">
+                                    <span class="avatar-title bg-danger-bright text-danger rounded-circle">S</span>
+                                </figure>
+                            </div>
+                            <div class="flex-grow-1 min-width-0">
+                                <div class="mb-1 d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate app-list-title">How To Set Intentions That Energize You</div>
+                                    <div class="pl-3 d-flex">
+                                        <span class="text-nowrap text-muted">15 July</span>
+                                        <div class="dropdown ml-3">
+                                            <a href="#" class="btn btn-outline-light btn-sm" data-toggle="dropdown">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#">Reply</a>
+                                                <a class="dropdown-item" href="#">Add star</a>
+                                                <a class="dropdown-item" href="#">Add label</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-muted d-flex justify-content-between">
+                                    <div class="text-truncate small">Hey John, bah kivu decrete epanorthotic
+                                        unnotched
+                                        Argyroneta nonius veratrine preimaginary.
+                                    </div>
+                                    <div class="text-nowrap pl-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item mb-0">
+                                                <i class="fa fa-circle text-danger"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end::app-lists -->
+
+                <!-- begin:app-detail -->
+                <div class="card app-detail">
+                    <div class="card-header">
+                        <div class="app-detail-action-left">
+                            <a class="app-detail-close-button" href="#">
+                                <i data-feather="arrow-left" class="mr-3"></i>
+                            </a>
+                            <h5 class="mb-0">
+                                Advertising Internet Online
+                                <span class="badge bg-success badge-pill ml-1">Freelance</span>
+                            </h5>
+                        </div>
+                        <div class="app-detail-action-right">
+                            <div>
+                                <a href="#" class="btn btn-outline-light" data-toggle="tooltip" title="Reply">
+                                    <i data-feather="corner-up-left"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-light ml-2" data-toggle="tooltip"
+                                   title="Mark as spam">
+                                    <i data-feather="info"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-light ml-2" data-toggle="tooltip"
+                                   title="Dispose">
+                                    <i data-feather="trash"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-detail-article">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center p-l-r-0 m-b-20">
+                                <div class="d-flex align-items-center">
+                                    <figure class="avatar avatar-sm m-r-15">
+                                        <img src="../../assets/media/image/user/women_avatar5.jpg" class="rounded-circle"
+                                             alt="image">
+                                    </figure>
+                                    <div>
+                                        <h6 class="m-b-0">
+                                            <span class="text-primary">Valentine Maton</span>
+                                            <span class="d-sm-inline d-none text-muted"> &lt;elnora@gmail.com&gt;</span>
+                                        </h6>
+                                        <span class="small text-muted">to Lois Jimenez</span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto">
+                                    <a href="#" data-toggle="tooltip" title="Attachment" class="mr-2">
+                                        <i class="fa fa-paperclip"></i>
+                                    </a>
+                                    <a href="#" class="mr-2">
+                                        <i class="fa fa-star font-size-16 text-warning"></i>
+                                    </a>
+                                    <span class="text-muted">4:14 AM</span>
+                                </div>
+                            </div>
+                            <p>Greetings!</p>
+                            <p>It is a long established fact that a reader will be distracted by the readable
+                                content of
+                                a page when looking at its layout.The point of using Lorem Ipsum is that it has a
+                                more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                content
+                                here',making it look like readable English.</p>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which
+                                don't
+                                look even slightly believable.</p>
+                            <p>Sincerely yours,</p>
+                            <p>
+                                <strong>Envato Design Team</strong>
+                            </p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="card-body">
+                            <h6 class="mb-3 font-size-11 text-uppercase">Attached Files</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="small">
+                                    <a href="#">
+                                        <i data-feather="paperclip" class="mr-1 width-15 height-15"></i>
+                                        uikit-design.psd
+                                    </a>
+                                </li>
+                                <li class="small">
+                                    <a href="#">
+                                        <i data-feather="paperclip" class="mr-1 width-15 height-15"></i>
+                                        uikit-design.sketch
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="m-0">
+                        <div class="card-body">
+                            <h6 class="mb-3 font-size-11 text-uppercase">Reply</h6>
+                            <div class="reply-email-quill-editor mb-3"></div>
+                            <div class="d-flex justify-content-between">
+                                <div class="reply-email-quill-toolbar">
+                                        <span class="ql-formats mr-0">
+                                          <button class="ql-bold"></button>
+                                          <button class="ql-italic"></button>
+                                          <button class="ql-underline"></button>
+                                          <button class="ql-link"></button>
+                                          <button class="ql-image"></button>
+                                        </span>
+                                </div>
+                                <button class="btn btn-primary">
+                                    <i data-feather="send" class="mr-2"></i>
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="compose">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Compose Email</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="ti-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between m-b-20">
+                        <div>
+                            <a href="#" data-toggle="tooltip" title=""
+                               class="btn btn-outline-light btn-sm mr-2"
+                               data-original-title="Keep">
+                                <i data-feather="save"></i>
+                            </a>
+                            <a href="#" data-toggle="tooltip" title=""
+                               class="btn btn-outline-light btn-sm mr-2"
+                               data-original-title="Delete">
+                                <i data-feather="trash-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control tagsinput" placeholder="To"
+                                   value="example@test.com.tr" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" multiple id="customFileLangHTML">
+                                <label class="custom-file-label" for="customFileLangHTML" data-browse="Select files">Voeg je document toe</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="compose-quill-editor mb-3"></div>
+                            <div class="d-flex justify-content-between">
+                                <div class="compose-quill-toolbar">
+                            <span class="ql-formats mr-0">
+                                <button class="ql-bold"></button>
+                                <button class="ql-italic"></button>
+                                <button class="ql-underline"></button>
+                                <button class="ql-link"></button>
+                                <button class="ql-image"></button>
+                            </span>
+                                </div>
+                                <button class="btn btn-primary">
+                                    <i data-feather="send" class="mr-2"></i>
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            </div>
+
+            <!-- begin::footer -->
+            <footer class="content-footer">
+                <div>© 2020 Nago - <a href="http://laborasyon.com/" target="_blank">Laborasyon</a></div>
+                <div>
+                    <nav class="nav">
+                        <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+                        <a href="#" class="nav-link">Change Log</a>
+                        <a href="#" class="nav-link">Get Help</a>
+                    </nav>
+                </div>
+            </footer>
+            <!-- end::footer -->
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end::main -->
+
+<!-- Plugin scripts -->
+<script src="../../vendors/bundle.js"></script>
+
+
+    <!-- Tagsinput -->
+    <script src="../../vendors/tagsinput/bootstrap-tagsinput.js"></script>
+    <script src="../../assets/js/examples/tagsinput.js"></script>
+
+    <!-- quill -->
+    <script src="../../vendors/quill/quill.js"></script>
+
+    <script>
+        new Quill('.compose-quill-editor', {
+            modules: {
+                toolbar: ".compose-quill-toolbar"
+            },
+            placeholder: "Type something... ",
+            theme: "snow"
+        });
+
+        new Quill('.reply-email-quill-editor', {
+            modules: {
+                toolbar: ".reply-email-quill-toolbar"
+            },
+            placeholder: "Type something... ",
+            theme: "snow"
+        });
+
+        $(function () {
+            $(document).on('click', '.app-block .app-content .app-action .action-left input[type="checkbox"]', function () {
+                $('.app-lists ul li input[type="checkbox"]').prop('checked', $(this).prop('checked'));
+                if ($(this).prop('checked')) {
+                    $('.app-lists ul li input[type="checkbox"]').closest('li').addClass('active');
+                } else {
+                    $('.app-lists ul li input[type="checkbox"]').closest('li').removeClass('active');
+                }
+            });
+
+            $(document).on('click', '.app-lists ul li input[type="checkbox"]', function () {
+                if ($(this).prop('checked')) {
+                    $(this).closest('li').addClass('active');
+                } else {
+                    $(this).closest('li').removeClass('active');
+                }
+            });
+
+            $(document).on('click', '.app-block .app-content .app-content-body .app-lists ul.list-group li.list-group-item', function (e) {
+                if (!$(e.target).is('.custom-control, .custom-control *, a, a *')) {
+                    $('.app-detail').addClass('show').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
+                        $('.app-block .app-content .app-content-body .app-detail .app-detail-article').niceScroll().resize();
+                    });
+                }
+            });
+
+            $(document).on('click', 'a.app-detail-close-button', function () {
+                $('.app-detail').removeClass('show');
+                return false;
+            });
+
+            $(document).on('click', '.app-sidebar-menu-button', function () {
+                $('.app-block .app-sidebar, .app-content-overlay').addClass('show');
+                // $('.app-block .app-sidebar .app-sidebar-menu').niceScroll().resize();
+                return false;
+            });
+
+            $(document).on('click', '.app-content-overlay', function () {
+                $('.app-block .app-sidebar, .app-content-overlay').removeClass('show');
+                return false;
+            });
+        });
+    </script>
+
+
+<!-- App scripts -->
+<script src="../../assets/js/app.min.js"></script>
+
+</body>
+
+<!-- Mirrored from nago.laborasyon.com/demos/layouts/default/mail.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Feb 2020 09:19:05 GMT -->
+</html>
